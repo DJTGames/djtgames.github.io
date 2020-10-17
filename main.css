@@ -1,0 +1,129 @@
+body {
+    font-family: 'Segoe UI';
+}
+
+* {
+    padding: 0;
+    margin: 0;
+
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav {
+    background: #262626;
+    height: 80px;
+    width: 100%;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-transform: uppercase;
+    
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+a.active,a:hover {
+    background: #4d4d4d;
+    transition: 0.2s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #ffffff;
+
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+label.logo-name {
+    /*color: #ffffff;
+    font-size: 35px;
+    font-weight: bold;*/
+
+    line-height: 80px;
+    padding: 0 100px;
+}
+
+label.logo-name img {
+    width: 200px;
+    padding-top: 5px;
+}
+
+@media (max-width: 952px) {
+    label.logo-name {
+        /*font-size: 30px;*/
+
+        padding: 0 50px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+
+    label.logo-name {
+        /*font-size: 24px;*/
+
+        padding: 0 20px;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.2s;
+
+        background: #3d3d3d;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a.active,a:hover {
+        background: none;
+        color: #6d6d6d;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
