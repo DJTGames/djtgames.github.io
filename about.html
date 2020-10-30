@@ -9,18 +9,10 @@
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     </head>
     <body>
-        <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fas fa-bars"></i>
-            </label>
-            <label class="logo-name"><a href="index"><img src="Images/Logos/logownamewhite_512x170.png"></a></label>
-            <ul>
-                <li><a href="index">Home</a></li>
-                <li><a class="active" href="about">About</a></li>
-                <li><a href="#">Downloads</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <div w3-include-html="/Dev/assets/nav.html"></div>
+    
+        <script>
+            includeHTML();
+        </script>
     </body>
 </html>
